@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Windsor_Circle_Extension",
+    "type": "magento-module",
+    "license": "Commercial",
+    "homepage": "",
+    "description": "Windsor Circle Predictive Marketing Platform",
+    "authors": [
+    {
+        "name": "Andrew Pearson",
+        "email": "partners@windsorcircle.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

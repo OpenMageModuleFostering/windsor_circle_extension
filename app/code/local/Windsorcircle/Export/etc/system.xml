@@ -1,0 +1,212 @@
+<config>
+    <tabs>
+        <windsorcircleexportconfig translate="label" module="windsorcircle_export">
+            <label>WindsorCircle Config</label>
+            <sort_order>99999</sort_order>
+        </windsorcircleexportconfig>
+    </tabs>
+    <sections>
+        <windsorcircle_export_options translate="label" module="windsorcircle_export">
+            <label>Export Config Options</label>
+            <tab>windsorcircleexportconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <messages translate="label">
+                    <label>Windsor Circle Config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <current_version translate="label">
+                            <label>Current Version</label>
+                            <frontend_type>label</frontend_type>
+                            <frontend_model>Windsorcircle_Export_Block_Adminhtml_Version</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </current_version>
+                        <client_name translate="label">
+                            <label>Client Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_name>
+                        <api_key translate="label">
+                            <label>API Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_key>
+                        <ftp_type translate="label">
+                            <label>FTP Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>windsorcircle_export/ftp_type</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ftp_type>
+                        <ftp_host translate="label">
+                            <label>FTP Host</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ftp_host>
+                        <ftp_folder>
+                            <label>FTP Folder</label>
+                            <comment>Folder to upload data, no leading or ending slash(/)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ftp_folder>
+                        <ftp_user translate="label">
+                            <label>FTP User</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ftp_user>
+                        <ftp_password translate="label">
+                            <label>FTP Password</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ftp_password>
+                        <public_key translate="label">
+                            <label>Public Key</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </public_key>
+                        <store translate="label">
+                            <label>Store Selection</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>windsorcircle_export/source_store</source_model>
+                            <sort_order>95</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </store>
+                        <brand_attribute>
+                            <label>Brand Attribute</label>
+                            <comment>If no attribute is selected then this will use the 'brand' attribute code</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>windsorcircle_export/brand_attribute</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </brand_attribute>
+                        <canceled_state translate="label">
+                            <label>Canceled State</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>windsorcircle_export/source_canceled_state</source_model>
+                            <sort_order>105</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </canceled_state>
+                        <image_type translate="label">
+                            <label>Image Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>windsorcircle_export/image_type</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_type>
+                        <memory_limit translate="label">
+                            <label>Memory limit value (in MBytes)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Set memory limit for module. If it's not specified or
+                            value is non numeric - default system settings will be used.  Example value 512M should be
+                            entered as 512]]></comment>
+                        </memory_limit>
+                        <inventory_enable translate="label">
+                            <label>Inventory Updates</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[When enabled this will update the product inventory counts in Windsor Circle
+                            for all items purchased.  Enable this and notify Windsor Circle if you want to limit product recommendations 
+                            to in stock items]]></comment>
+                        </inventory_enable>
+                        <custom_product_attributes translate="label">
+                            <label>Custom Product Attributes</label>
+                            <frontend_model>windsorcircle_export/adminhtml_form_field_product_attributes</frontend_model>
+                            <backend_model>windsorcircle_export/system_config_backend_attributes</backend_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_product_attributes>
+                        <custom_customer_attributes translate="label">
+                            <label>Custom Customer Attributes</label>
+                            <frontend_model>windsorcircle_export/adminhtml_form_field_customer_attributes</frontend_model>
+                            <backend_model>windsorcircle_export/system_config_backend_attributes</backend_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_customer_attributes>
+                        <custom_customer_address_attributes translate="label">
+                            <label>Custom Customer Address Attributes</label>
+                            <frontend_model>windsorcircle_export/adminhtml_form_field_customer_address_attributes</frontend_model>
+                            <backend_model>windsorcircle_export/system_config_backend_attributes</backend_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_customer_address_attributes>
+                        <custom_order_attributes translate="label">
+                            <label>Custom Order Fields</label>
+                            <frontend_model>windsorcircle_export/adminhtml_form_field_order_fields</frontend_model>
+                            <backend_model>windsorcircle_export/system_config_backend_attributes</backend_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_order_attributes>
+                        <custom_order_item_buy_request_attributes translate="label">
+                            <label>Custom Order Item Buy Request Options</label>
+                            <frontend_model>windsorcircle_export/adminhtml_form_field_order_item_buy_request</frontend_model>
+                            <backend_model>windsorcircle_export/system_config_backend_attributes</backend_model>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_order_item_buy_request_attributes>
+                    </fields>
+                </messages>
+            </groups>
+        </windsorcircle_export_options>
+    </sections>
+</config>
